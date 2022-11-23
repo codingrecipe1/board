@@ -13,3 +13,10 @@
 4. 글수정(/board/update/{id})
 5. 글삭제(/board/delete/{id})
 6. 페이징처리(/board/paging)
+
+## mysql DataBase 계정 생성 및 권한 부여 
+```
+create database db_codingrecipe;
+create user user_codingrecipe@localhost identified by '1234';
+grant all privileges on db_codingrecipe.* to user_codingrecipe@localhost;
+```
