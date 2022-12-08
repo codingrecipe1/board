@@ -7,11 +7,12 @@
 <body>
 <!-- front 부분은 되도록이면 복사 붙여넣기 해주세요 -->
 <!-- action속성: 목적지(서버주소), method속성: http request method(get, post) -->
-<form action="/board/save" method="post">
+<form action="/board/save" method="post" enctype="multipart/form-data">
     writer: <input type="text" name="boardWriter"> <br>
     pass: <input type="text" name="boardPass"> <br>
     title: <input type="text" name="boardTitle"> <br>
     contents: <textarea name="boardContents" cols="30" rows="10"></textarea> <br>
+    file: <input type="file" name="boardFile"> <br>
     <input type="submit" value="글작성">
 </form>
 </body>
